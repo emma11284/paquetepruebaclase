@@ -19,6 +19,7 @@ library(paquetepruebaclase)
 ```
 
 Esta es una viñeta de prueba, podemos demostrar el uso de funciones.
+
 ```{r}
 suma(2,2)
 ```
