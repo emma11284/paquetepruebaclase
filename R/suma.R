@@ -15,16 +15,13 @@
 #' @export
 suma <- function(a, b) {
 
-  if(!is.numeric(x)) {
+  if(!is.numeric(a)) {
     cli::cli_abort(c(
-      "i" = "el argumento x no es numérico"
+      "i" = "el argumento a no es numérico"
     ))
   }
 
-  if (a < 0 || b < 0) {
-    stop("Error: no puedo sumar números negativos")
-  }
-  return(a + b)
+  a + b
 }
 
 
