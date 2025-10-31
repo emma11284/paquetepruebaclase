@@ -16,6 +16,9 @@ Depends:
     R (>= 3.5)
 LazyData: true
 Suggests: 
+    dplyr,
     knitr,
     rmarkdown
 VignetteBuilder: knitr
+Imports: 
+    cli
