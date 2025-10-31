@@ -1,12 +1,3 @@
-suma <- function(x, y){
-  x + y
-}
-
-suma <- function(x = 6, y = 9){
-  x + y
-}
-
-
 #' Suma dos números
 #'
 #' suma dos numeros que deben ser positivo.
@@ -23,6 +14,12 @@ suma <- function(x = 6, y = 9){
 #'
 #' @export
 suma <- function(a, b) {
+
+  if(!is.numeric(x)) {
+    cli::cli_abort(c(
+      "i" = "el argumento x no es numérico"
+    ))
+  }
 
   if (a < 0 || b < 0) {
     stop("Error: no puedo sumar números negativos")
